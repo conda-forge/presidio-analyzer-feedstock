@@ -21,13 +21,13 @@ requirements:
     - poetry-core
   run:
     - python >={{ python_min }},<4
-    - spacy >=3.4.4,<4.0.0
+    - spacy >=3.4.4,<4.0.0,!=3.7.0
     - regex
     - tldextract
     - pyyaml
     - phonenumbers >=8.12,<9.0.0
   run_constrained: # Optional packages
-    - flask
+    - flask >=1.1
     - spacy_huggingface_pipelines
     - stanza
     - spacy_stanza
@@ -35,6 +35,7 @@ requirements:
     - azure-core
     - transformers
     - huggingface_hub
+    - gunicorn
 
 test:
   imports:
