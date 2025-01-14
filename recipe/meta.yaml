@@ -33,9 +33,11 @@ requirements:
     - spacy_stanza
     - azure-ai-textanalytics
     - azure-core
+    - gliner >=0.2.13,<1.0.0
     - transformers
     - huggingface_hub
     - gunicorn
+    - onnxruntime-gpu >=1.19
 
 test:
   imports:
